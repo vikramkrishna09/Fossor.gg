@@ -1,0 +1,19 @@
+{%if values[0][0] == 'MASTER'%}
+                  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='master.css')}}">
+
+                        {%if (values[0][1]) == 'IV'%}
+<img src="{{url_for('static', filename='Masters4.png')}}" alt="">
+                        {%endif%}
+                        {%if values[0][1] == 'III'%}
+<img src="{{url_for('static', filename='Masters3.png')}}" alt="">
+                        {%endif%}
+
+                        {%if values[0][1] == 'II'%}
+<img src="{{url_for('static', filename='Masters2.png')}}" alt="">
+                        {%endif%}
+
+                        {%if values[0][1] == 'I'%}
+<img src="{{url_for('static', filename='Masters1.png')}}" alt="">
+
+                        {%endif%}
+{%endif%}

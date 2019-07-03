@@ -1,0 +1,36 @@
+
+
+<div class = "row">
+            <div class = "col-md-4">
+            </div>
+            <div id = "centercolumn" class = "col-md-4 style=text-align: center;">
+                <div id = 'rank_solo_metadata'>
+                <h1>Ranked Solo 5v5</h1>
+                <h1 id = 'name'>{{values[2]}}</h1>
+                    {%if values[0] == 'Unranked'%}
+                    <h1 id = 'rank'>{{values[0]}}</h1>
+                    <img src="{{url_for('static', filename='Unranked.png')}}" alt="">
+                    {%else%}
+                    <h1 id = rankandtier>{{values[0][0] + " " + values[0][1] + ":"}} {{values[0][2]}} {{" LP"}}</h1>
+
+
+                     {%include 'platinum.html'%}
+                     {%include 'silver.html'%}
+                     {%include 'gold.html'%}
+                     {%include 'diamond.html'%}
+                     {%include 'challenger.html'%}
+                     {%include 'master.html'%}
+                     {%include 'bronze.html'%}
+                     {%include 'iron.html'%}
+                     {%include 'grandmaster.html'%}
+
+                    <h2 id = 'wins'>{{"wins:"}} {{values[0][3]}}</h2>
+                    <h2 id = 'losses'>{{"losses:"}} {{values[0][4]}}</h2>
+                    <h2 id = 'percentage'>{{"percentage:"}} {{values[0][5]}}{{"%"}}</h2>
+                    {%endif%}
+
+                </div>
+
+
+            </div>
+        </div>
