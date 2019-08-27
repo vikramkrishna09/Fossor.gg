@@ -1,0 +1,36 @@
+
+
+<div class = "row">
+            <div class = "col-md-4">
+            </div>
+            <div id = "centercolumn" class = "col-md-4 style=text-align: center;">
+                <div id = 'tt_5v5_metadata'>
+                <h1>Twisted Treeline 3v3</h1>
+                <h1 id = 'name'>{{values[2]}}</h1>
+                    {%if values[3] == 'Unranked'%}
+                    <h1 id = 'rank'>{{values[3]}}</h1>
+                    <img src="{{url_for('static', filename='Unranked.png')}}" alt="">
+                    {%else%}
+                    <h1 id = rankandtier>{{values[3][0] + " " + values[3][1] + ":"}} {{values[3][2]}} {{" LP"}}</h1>
+
+
+                     {%include 'ranked_ttreeline_htmls/platinum3.html'%}
+                     {%include 'ranked_ttreeline_htmls/silver3.html'%}
+                     {%include 'ranked_ttreeline_htmls/gold3.html'%}
+                     {%include 'ranked_ttreeline_htmls/diamond3.html'%}
+                     {%include 'ranked_ttreeline_htmls/challenger3.html'%}
+                     {%include 'ranked_ttreeline_htmls/master3.html'%}
+                     {%include 'ranked_ttreeline_htmls/bronze3.html'%}
+                     {%include 'ranked_ttreeline_htmls/iron3.html'%}
+                     {%include 'ranked_ttreeline_htmls/grandmaster3.html'%}
+
+                    <h2 id = 'wins'>{{"wins:"}} {{values[3][3]}}</h2>
+                    <h2 id = 'losses'>{{"losses:"}} {{values[3][4]}}</h2>
+                    <h2 id = 'percentage'>{{"percentage:"}} {{values[3][5]}}{{"%"}}</h2>
+                    {%endif%}
+
+                </div>
+
+
+            </div>
+        </div>

@@ -1,0 +1,19 @@
+{%if values[1][0] == 'SILVER'%}
+                                      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Silverfiles/silver2.css')}}">
+
+                        {%if (values[1][1]) == 'IV'%}
+<img src="{{url_for('static', filename='Silverfiles/Silver4.png')}}" alt="">
+                        {%endif%}
+                        {%if values[1][1] == 'III'%}
+<img src="{{url_for('static', filename='Silverfiles/Silver3.png')}}" alt="">
+                        {%endif%}
+
+                        {%if values[1][1] == 'II'%}
+<img src="{{url_for('static', filename='Silverfiles/Silver2.png')}}" alt="">
+                        {%endif%}
+
+                        {%if values[1][1] == 'I'%}
+<img src="{{url_for('static', filename='Silverfiles/Silver1.png')}}" alt="">
+
+                        {%endif%}
+{%endif%}

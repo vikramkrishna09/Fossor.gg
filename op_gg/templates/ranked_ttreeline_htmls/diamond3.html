@@ -1,0 +1,18 @@
+{%if values[3][0] == 'DIAMOND'%}
+                  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Diamondfiles/diamond3.css')}}">
+
+                        {%if (values[3][1]) == 'IV'%}
+<img src="{{url_for('static', filename='Diamondfiles/Diamond4.png')}}" alt="">
+                        {%endif%}
+                        {%if values[3][1] == 'III'%}
+<img src="{{url_for('static', filename='Diamondfiles/Diamond3.png')}}" alt="">
+                        {%endif%}
+
+                        {%if values[3][1] == 'II'%}
+<img src="{{url_for('static', filename='Diamondfiles/Diamond2.png')}}" alt="">
+                        {%endif%}
+
+                        {%if values[3][1] == 'I'%}
+<img src="{{url_for('static', filename='Diamondfiles/Diamond1.png')}}" alt="">
+                        {%endif%}
+{%endif%}

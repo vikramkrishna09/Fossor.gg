@@ -1,0 +1,122 @@
+body {
+	background: black;
+}
+
+.navbar-light .navbar-brand
+{
+    color:rgba(244, 17, 17, 0.9);
+}
+
+.bg-light
+{
+    background-color: black!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: red;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+{
+    color:blue;
+}
+
+
+    #centercolumn {
+	text-align: center;
+}
+
+
+
+#rank_solo_metadata
+{
+    color:white;
+}
+
+#rank_5v5_metadata
+{
+    color:white;
+}
+
+#tt_5v5_metadata
+{
+    color:white;
+}
+#tft_metadata
+{
+    color:white;
+}
+#rankandtier
+{
+    width: 400px;
+}
+
+
+
+
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+	color: red !important;
+	border-color: #080808 !important;
+	padding-bottom: 0.5rem !important;
+	margin-right: 25px !important;
+	background: black;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show > .btn-light.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0 rgba(216,217,219,.5);
+}
+
+.btn-light.focus, .btn-light:focus {
+	box-shadow: 0 0 0 0 rgba(216,217,219,.5);
+}
+
+.btn-light
+{
+    color: red !important;
+	border-color: #080808 !important;
+	padding-bottom: 0.5rem !important;
+	margin-right: 25px !important;
+	background: black;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: red !important;
+	background-color: #000;
+	/* background-clip: padding-box; */
+	border: 0px;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	margin-top: 2px !important;
+}
+
+
+.alert {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	margin-left: 25rem;
+	color:purple;
+	font-size:1.3rem !important;
+}
+
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
+	position: relative;
+	-ms-flex: 1 1 auto;
+	flex: 0;
+	width: 1%;
+	margin-bottom: 0;
+	min-width: 200px;
+}

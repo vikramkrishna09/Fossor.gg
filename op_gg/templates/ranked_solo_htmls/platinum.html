@@ -1,0 +1,22 @@
+{%if values[0][0] == 'PLATINUM'%}
+                  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Platinumfiles/platinum.css')}}">
+
+                        {%if (values[0][1]) == 'IV'%}
+<img src="{{url_for('static', filename='Platinumfiles/Platinum4.png')}}" alt="">
+
+                        {%endif%}
+                        {%if values[0][1] == 'III'%}
+<img src="{{url_for('static', filename='Platinumfiles/Platinum3.png')}}" alt="">
+
+                        {%endif%}
+
+                        {%if values[0][1] == 'II'%}
+<img src="{{url_for('static', filename='Platinumfiles/Platinum2.png')}}" alt="">
+
+                        {%endif%}
+
+                        {%if values[0][1] == 'I'%}
+<img src="{{url_for('static', filename='Platinumfiles/Platinum1.png')}}" alt="">
+
+                        {%endif%}
+{%endif%}
