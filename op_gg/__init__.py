@@ -9,7 +9,7 @@ import os
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = os.urandom(31)
 app.config['SESSION_TYPE'] = 'filesystem'
-apikey = "RGAPI-9096e972-751b-436c-ab39-5fca1aef6fa4"
+apikey = "RGAPI-4f39d34c-9023-44b2-87bf-fd123d197431"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)

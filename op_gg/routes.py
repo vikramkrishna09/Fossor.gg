@@ -35,6 +35,8 @@ def home(name=None):
     return render_template('home.html', form=form,cache=kappacache)
 
 
+
+
 def getipaddress():
     return request.headers.get('X-Forwarded-For', request.remote_addr)
 
@@ -74,6 +76,11 @@ def unjesonifySession(ipaddress):
             Session[ipaddress] = json.loads(Session[ipaddress])
 
 
+@app.route("/Livegame/<region>/Username=<name>")
+def Livegame(name=None,region=None):
+    y = 5
+
+
 @app.route("/na1/Username=<name>", methods=['GET', 'POST'])
 def na(name=None):
    return anyregion('na1',name)
@@ -81,6 +88,7 @@ def na(name=None):
 @app.route("/euw1/Username=<name>", methods=['GET','POST'])
 def euw(name=None):
   return anyregion('euw1',name)
+
 
 def anyregion(region,name):
     form = SearchForm()

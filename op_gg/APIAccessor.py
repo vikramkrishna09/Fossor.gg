@@ -109,3 +109,9 @@ def requestRankedData(region, ID, APIKey):
     print ('URL')
     response = requests.get(URL)
     return response.json()
+
+def requestLiveGameData(region,ID,APIKey):
+    URL = "https://" + region + ".api.riotgames.com/lol/league/v4/active-games/by-summoner/" + ID + "?api_key=" + APIKey
+    print('URL')
+    response = requests.get(URL)
+    return response.json()
